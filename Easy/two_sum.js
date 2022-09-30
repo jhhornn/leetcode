@@ -11,3 +11,24 @@
  * Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
  */
 
+const {
+	default: TestRunner,
+} = require('jest-runner')
+const { it } = require('node:test')
+const { describe } = require('yargs')
+
+
+
+//Test Cases
+describe('Tests', () => {
+	it('test', () => {
+		Test.assertEquals(
+			twoSum([2, 7, 11, 15], 9),
+			[0, 1],
+		)
+		Test.assertEquals(
+			twoSum([3, 2, 4], 6),
+			[1, 2],
+		)
+	})
+})
