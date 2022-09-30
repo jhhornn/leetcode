@@ -11,11 +11,6 @@
  * Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
  */
 
-const {
-	default: TestRunner,
-} = require('jest-runner')
-const { it } = require('node:test')
-const { describe } = require('yargs')
 
 // Solution
 
@@ -34,6 +29,8 @@ var twoSum = function (nums, target) {
 }
 
 //Test Cases
+//Copy the below to a test file having a .test.js extension and run `npm run test` in your terminal.
+
 describe('Tests', () => {
 	it('test', () => {
 		Test.assertEquals(
