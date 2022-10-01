@@ -19,6 +19,17 @@
  * Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
  */
 
+//Solution
+var isPalindrome = function (x) {
+	let strX = x.toString()
+	return strX
+		.split('')
+		.reverse()
+		.join('') == strX
+		? true
+		: false
+}
+
 //Test Cases
 //Copy the below to a test file having a .test.js extension and run `npm run test` in your terminal.
 
