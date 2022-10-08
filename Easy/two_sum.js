@@ -33,6 +33,21 @@ var twoSum = function (nums, target) {
 	}
 }
 
+// More suitable and faster solution
+
+var twoSum2 = function (nums, target) {
+	prevMap = {}
+
+	for (let i = 0; i < nums.length; i++) {
+		diff = target - nums[i]
+		if  (diff in prevMap) {
+			return [prevMap[diff], i]
+		}
+		prevMap[nums[i]] = i
+	}
+}
+
+console.log(twoSum2([3, 2, 4], 6))
 //Test Cases
 //Copy the below to a test file having a .test.js extension and run `npm run test` in your terminal.
 
