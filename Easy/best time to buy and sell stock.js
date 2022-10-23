@@ -1,5 +1,6 @@
 /**
  * Description
+ * Array Problem
  * 
  * @param {number[]} prices
  * @return {number}
