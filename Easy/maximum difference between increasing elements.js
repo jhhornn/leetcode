@@ -28,23 +28,45 @@
  * The maximum difference occurs with i = 0 and j = 3, nums[j] - nums[i] = 10 - 1 = 9.
  */
 
+//Solution
+
+var maximumDifference = function (
+  nums
+) {
+  let minIndex = 0
+  let maxIndex = 1
+  let maxDiff = -1
+  while (maxIndex < nums.length) {
+    if (
+      nums[maxIndex] > nums[minIndex]
+    ) {
+      let diff =
+        nums[maxIndex] - nums[minIndex]
+      maxDiff = Math.max(diff, maxDiff)
+    } else {
+      minIndex = maxIndex
+    }
+    maxIndex += 1
+  }
+  return maxDiff
+}
 
 //Test Cases
 //Copy the below to a test file having a .test.js extension and run `npm run test` in your terminal.
 
 describe('Tests', () => {
-    it('test', () => {
-      Test.assertEquals(
-        maximumDifference([7,1,5,4]),
-        4
-      )
-      Test.assertEquals(
-        maximumDifference([9,4,3,2]),
-        -1
-      )
-      Test.assertEquals(
-        maximumDifference([1,5,2,10]),
-        9
-      )
-    })
+  it('test', () => {
+    Test.assertEquals(
+      maximumDifference([7, 1, 5, 4]),
+      4
+    )
+    Test.assertEquals(
+      maximumDifference([9, 4, 3, 2]),
+      -1
+    )
+    Test.assertEquals(
+      maximumDifference([1, 5, 2, 10]),
+      9
+    )
   })
+})
