@@ -23,3 +23,21 @@
  *Output: 0
  *Explanation: In this case, no transactions are done and the max profit = 0.
 */
+
+
+
+//Test Cases
+//Copy the below to a test file having a .test.js extension and run `npm run test` in your terminal.
+
+describe('Tests', () => {
+	it('test', () => {
+		Test.assertEquals(
+			maxProfit([7,1,5,3,6,4]),
+			5,
+		)
+		Test.assertEquals(
+			maxProfit([7,6,4,3,1]),
+			0,
+		)
+	})
+})
