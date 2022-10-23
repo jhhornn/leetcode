@@ -21,27 +21,27 @@
 
 //Solution
 var isPalindrome = function (x) {
-	let strX = x.toString()
-	return strX
-		.split('')
-		.reverse()
-		.join('') == strX
-		? true
-		: false
+  let strX = x.toString()
+  return strX
+    .split('')
+    .reverse()
+    .join('') == strX
+    ? true
+    : false
 }
 
 //Test Cases
 //Copy the below to a test file having a .test.js extension and run `npm run test` in your terminal.
 
 describe('Tests', () => {
-	it('test', () => {
-		Test.assertEquals(
-			isPalindrome(121),
-			true,
-		)
-		Test.assertEquals(
-			isPalindrome(-121),
-			false,
-		)
-	})
+  it('test', () => {
+    Test.assertEquals(
+      isPalindrome(121),
+      true
+    )
+    Test.assertEquals(
+      isPalindrome(-121),
+      false
+    )
+  })
 })
