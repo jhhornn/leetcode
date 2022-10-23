@@ -27,3 +27,24 @@
  * Explanation:
  * The maximum difference occurs with i = 0 and j = 3, nums[j] - nums[i] = 10 - 1 = 9.
  */
+
+
+//Test Cases
+//Copy the below to a test file having a .test.js extension and run `npm run test` in your terminal.
+
+describe('Tests', () => {
+    it('test', () => {
+      Test.assertEquals(
+        maximumDifference([7,1,5,4]),
+        4
+      )
+      Test.assertEquals(
+        maximumDifference([9,4,3,2]),
+        -1
+      )
+      Test.assertEquals(
+        maximumDifference([1,5,2,10]),
+        9
+      )
+    })
+  })
